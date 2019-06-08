@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="Pokemon">
+  <head>
+    <script src="lib/jquery.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, user-scalable-no, inicial-scale-1, maximus-scale-1, minimum-scale-1">
+    <link rel="icon" href="images/pokeicon.png">
+    <title>PokéWeb</title>
+    <link rel="stylesheet" href="css/Pokemon.ttf">
+    <link rel="stylesheet" href="lib/boo/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inicioss.css">
+  </head>
+  <body ng-controller="Pokecontrol">
+    <div class="container header">
+      <div class="row">
+        <div class="col-md-12 titulo1">PokéWeb</div>
+      </div>
+    </div>
+    <div class='login'>
+      <h2>Inicio De Sesión</h2>
+      <input name='username' placeholder='Usuario o E-mail' type='text'/>
+      <input id='pw' name='password' placeholder='Contraseña' type='password'/>
+      <div class='remember'>
+        <input checked='' id='remember' name='remember' type='checkbox'/>
+        <label for='remember'></label>Recordarme
+      </div>
+      <input class="inicioS" type='submit' value='Iniciar Sesión' onclick="location.href='Templates/index.html'"/>
+      <a class='forgot' href='#'>Olvidaste tu contraseña?</a>
+    </div>
+    <script src="lib/angular.js"></script>
+    <script src="lib/boo/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

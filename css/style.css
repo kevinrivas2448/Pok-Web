@@ -1,0 +1,49 @@
+body {
+  background-color: #F7f518;
+}
+.btn{
+  border: solid brown 2px;
+  background-color: #F7f518;
+  cursor: pointer;
+}
+.pokemonarea{
+  text-align: center;
+  width: 250px;
+  height: 200px;
+  border: solid brown 3px;
+  background-color: #FDF5DE;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 2px 5px #54585C;
+}
+.header {
+  font-family: "Pokemon";
+  height: 80px;
+  background-color: #FE3E31;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.pokename{
+  font-family: "Pokemon";
+  color: orange;
+  text-align: center;
+  font-size: 30px;
+}
+@font-face {
+  font-family: "Pokemon";
+  src: url(Pokemon.ttf);
+}
+.titulo1{
+  color: #FFFFFF;
+  font-size: 60px;
+  text-align: center;
+}
+.p1{
+  text-align: center;
+  border: grid blue 2px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="Pokemon">
+  <head>
+    <script src="../lib/jquery.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, user-scalable-no, inicial-scale-1, maximus-scale-1, minimum-scale-1">
+    <link rel="icon" href="../images/pokeicon.png">
+    <title>PokéWeb</title>
+    <link rel="stylesheet" href="../css/Pokemon.ttf">
+    <link rel="stylesheet" href="../lib/boo/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body ng-controller="Pokecontrol">
+    <div class="container header">
+      <div class="row">
+        <div class="col-md-12 titulo1">PokéWeb</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 p1"><input class="btn" onclick="location.href='#'" value="Inicio"/></div>
+        <div class="col-md-3 p1"><input class="btn" onclick="location.href='#'" value="Inhabilitado"/></div>
+        <div class="col-md-3 p1"><input class="btn" onclick="location.href='#'" value="Inhabilitado"/></div>
+        <div class="col-md-3 p1"><input class="btn" onclick="location.href='../index.html'" value="Cerrar Sesión"/></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4" ng-repeat="x in PokeData">
+            <div class="pokemonarea">
+              <img src="{{x.data.sprites.front_default}}" alt="pokemon">
+              <span class="pokename">{{x.data.name}}</span>
+            </div>
+            <br>
+          </div>
+      </div>
+    </div>
+
+    <script src="../lib/angular.js"></script>
+    <script src="../lib/boo/js/bootstrap.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
